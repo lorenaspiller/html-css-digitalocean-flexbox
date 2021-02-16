@@ -110,11 +110,20 @@ p {
 .header__logo .logo {
   width: 172px;
 }
+.main-nav li,
+.secondary-nav li {
+  padding: 0 10px;
+}
 
 .main-nav li a, .secondary-nav li a {
   color: #000;
   font-size: 14px;
   text-transform: capitalize;
+}
+
+.secondary-nav li .btn_primary:hover {
+  background-color: #006aff;
+  color: #fff;
 }
 
 .secondary-nav ul {
@@ -135,6 +144,12 @@ p {
 /* brands */
 #brands {
   padding: 30px 0;
+}
+
+.hamburger {
+  display: none;
+  font-size: 20px;
+  color: rgba(58,138,255,255);
 }
 
 .brands__title {
@@ -227,6 +242,17 @@ p {
   .container {
     max-width: 970px;
     margin: auto;
+  }
+
+  /* header */
+  .main-nav,
+  .secondary-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
   }
 
   /* deploy */
