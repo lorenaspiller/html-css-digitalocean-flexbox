@@ -55,15 +55,26 @@ a {
 /* /MIX */
 
 /* TYPO */
+h2 {
+  font-size: 33px;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+}
+
 h5 {
   color: #031b4e;
   font-weight: bold;
   font-size: 17px;
   margin: 20px 0 10px 0;
 }
+
+p {
+  color: #5b6987;
+  font-weight: 500;
+}
 /* /TYPO */
 
-
+/* main */
 /* brands */
 #brands {
   padding: 30px 0;
@@ -94,9 +105,62 @@ h5 {
 }
 /* /brands */
 
+/* deploy */
+#deploy {
+  padding: 40px 0;
+}
+
+.deploy__text {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.deploy__columns {
+  display: flex;
+  margin-top: 50px;
+}
+
+.deploy__list {
+  flex-basis: calc(30% - 10px);
+  margin-right: 10px;
+}
+
+.deploy__list li {
+  list-style: none;
+  text-transform: capitalize;
+  line-height: 40px;
+  padding-left: 15px;
+  border-left: 2px solid #ccc;
+}
+
+.deploy__list li a {
+  color: rgba(3, 27, 78, 0.6);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.deploy__list li:hover {
+  border-left: 2px solid #006aff;
+}
+
+.deploy__boxes {
+  flex-basis: calc(70% - 10px);
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deploy_box {
+  flex-basis: calc(50% - 10px);
+  margin: 0 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+/* /deploy */
+/* main */
+
 
 /* RESPONSIVE */
-
 /* < 992px */
 @media screen and (max-width: 992px) {
   h5 {
@@ -107,11 +171,18 @@ h5 {
     max-width: 970px;
     margin: auto;
   }
+
+  /* deploy */
+  .deploy__text {
+    font-size: 18px;
+  }
+  /* /deploy */
 }
 /* /< 992px */
 
 /* < 768px */
 @media screen and (max-width: 768px) {
+  /* brands */
   .brands__list li {
     flex-basis: calc( ( 100% / 2 ) - 8px );
     height: auto;
@@ -122,11 +193,29 @@ h5 {
   .brands__list li .brand {
     width: 80%;
   }
+  /* /brands */
+
+  /* deploy */
+  .deploy__columns,
+  .deploy__boxes,
+  .deploy__list {
+    display: block;
+  }
+
+  .deploy__list {
+    margin-bottom: 30px;
+  }
+
+  .deploy_box {
+    margin-left: 0;
+  }
+  /* /deploy */
 }
 /* /< 768px */
 
 /* < 576px */
 @media screen and (max-width: 576px) {
+  /* brands */
   .brands__list {
     display: block;
     width: 80%;
@@ -136,6 +225,7 @@ h5 {
   .brands__list li .brand {
     width: 60%;
   }
+  /* /brands */
 }
 /* /< 576px */
 /* /RESPONSIVE */
