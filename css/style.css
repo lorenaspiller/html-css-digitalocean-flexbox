@@ -35,6 +35,11 @@ body {
   text-align: center;
 }
 
+.list-inline {
+  display: flex;
+  list-style: none;
+}
+
 .anchor {
   font-weight: 700;
 }
@@ -51,6 +56,16 @@ a {
 .anchor .arrow-right {
   font-size: 10px;
   margin-left: 10px;
+}
+
+.btn_primary {
+  border: 1px solid #006aff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
 }
 /* /MIX */
 
@@ -73,6 +88,48 @@ p {
   font-weight: 500;
 }
 /* /TYPO */
+
+/* header */
+.header__top {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  /* position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; */
+}
+
+.header__logo a {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo .logo {
+  width: 172px;
+}
+
+.main-nav li a, .secondary-nav li a {
+  color: #000;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.secondary-nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.secondary-nav li .btn_primary {
+  color: rgb(0, 106, 255);
+}
+
+.main-nav li, .secondary-nav li {
+  margin-right: 10px;
+}
+/* /header */
 
 /* main */
 /* brands */
@@ -191,7 +248,7 @@ p {
   }
 
   .brands__list li .brand {
-    width: 80%;
+    width: 70%;
   }
   /* /brands */
 
@@ -223,7 +280,7 @@ p {
   }
 
   .brands__list li .brand {
-    width: 60%;
+    width: 40%;
   }
   /* /brands */
 }
